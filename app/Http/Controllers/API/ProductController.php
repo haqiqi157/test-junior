@@ -27,7 +27,7 @@ class ProductController extends Controller
         try {
             $category_id = $request->input('category_id');
             $status_id = $request->input('status_id');
-            $name = $request->input('name');
+            $name = $request->input('name_product');
             $limit = $request->input('limit', 10);
 
             //minimal 3 characters

@@ -5,7 +5,6 @@ namespace App\Services;
 use App\Repositories\CategoryRepository;
 use App\Repositories\ProductRepository;
 use App\Repositories\StatusRepository;
-use Illuminate\Http\Request;
 
 class ProductService
 {

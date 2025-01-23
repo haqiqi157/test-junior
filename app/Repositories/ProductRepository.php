@@ -21,13 +21,7 @@ class ProductRepository
 
     public function findByName(string $name)
     {
-        // Menggunakan LIKE untuk mencari produk yang mengandung kata yang diinputkan
         $products = Product::where('name_product', 'LIKE', '%' . $name . '%')->get();
-
-        if ($products->isEmpty())
-        {
-            throw new \Exception('name_product does not exist');
-        }
 
         return $products;
     }

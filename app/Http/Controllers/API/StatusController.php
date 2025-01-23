@@ -47,6 +47,7 @@ class StatusController extends Controller
         } catch (\Exception $e) {
             // Kembalikan respons error jika ada exception
             return ResponseAPI::error('data not found', 404);
+
         }
     }
 
